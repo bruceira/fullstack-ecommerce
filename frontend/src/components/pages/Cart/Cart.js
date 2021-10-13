@@ -17,7 +17,7 @@ function Cart() {
         {
           cartItems.length === 0 ? (<div>
             your cart is empty <Link to="/">go back</Link>
-          </div>) : cartItems.map(item => (<CartItem />))
+          </div>) : (cartItems.map((item) => (<CartItem item={item} />)))
         }
         <CartItem />
       </div>
